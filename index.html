@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AUK EventFlow</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrapper">
+            <!-- Navigation Header -->
+            <nav class="navbar navbar-expand-lg navbar-dark auk-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="auk-logo-badge">A</span>
+                        <span>AUK Events</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html">Events</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="text-white me-2" style="cursor: pointer;"><i class="bi bi-moon-fill"></i></span>
+                            <a href="login.html" class="btn btn-auk-outline btn-sm">Sign In</a>
+                            <a href="login.html?tab=register" class="btn btn-auk-gold btn-sm">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Body Content -->
+            <main class="container my-5">
+                <!-- Welcome Guest Box Header -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="fw-bold m-0">Welcome Guest!</h2>
+                        <p class="text-muted">Your campus community starts here.</p>
+                    </div>
+                    <div>
+                        <span class="badge bg-light text-dark p-2 border">Guest</span>
+                    </div>
+                </div>
+
+                <!-- Hero Section -->
+                <div class="auk-hero-card">
+                    <p class="text-uppercase fw-semibold tracking-wider text-warning mb-1">American University of Kuwait</p>
+                    <h1>Discover Campus Events</h1>
+                    <p class="fs-5 mb-4 max-width-600">A centralized platform for AUK student bookings. Enforce capacity, eliminate overcapacity.</p>
+                    <a href="events.html" class="btn btn-auk-gold btn-lg">Explore Upcoming Events</a>
+                </div>
+
+                <!-- Campus Overview Categories Grid (Full Width) -->
+                <div>
+                    <h3 class="fw-bold mb-4">Campus Overview <span class="fs-6 text-muted fw-normal">| Explore by Category</span></h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm border-0 p-4 auk-card">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="bg-light p-3 rounded text-danger"><i class="bi bi-theater-masks fs-2"></i></div>
+                                </div>
+                                <h4 class="fw-bold">Theatre Plays</h4>
+                                <p class="text-muted mb-0">High-attendance artistic performances staged in the campus auditorium.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm border-0 p-4 auk-card">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="bg-light p-3 rounded text-primary"><i class="bi bi-terminal fs-2"></i></div>
+                                </div>
+                                <h4 class="fw-bold">Tech Workshops</h4>
+                                <p class="text-muted mb-0">Rigorous, hands-on computer laboratory sessions where availability is strictly capped.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm border-0 p-4 auk-card">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="bg-light p-3 rounded text-success"><i class="bi bi-journal-code fs-2"></i></div>
+                                </div>
+                                <h4 class="fw-bold">Academic Seminars</h4>
+                                <p class="text-muted mb-0">Lectures delivered by esteemed guest speakers within lecture halls.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="auk-footer text-center">
+            <div class="container">
+                <p class="mb-1">AMERICAN UNIVERSITY OF KUWAIT</p>
+                <div class="d-flex justify-content-center gap-3 mb-2">
+                    <a href="index.html">Home</a>
+                    <a href="events.html">Events</a>
+                </div>
+                <small class="text-muted">&copy; 2026 AUK EventFlow. All rights reserved.</small>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

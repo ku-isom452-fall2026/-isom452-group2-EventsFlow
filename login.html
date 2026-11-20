@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | AUK EventFlow</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrapper">
+            <!-- Navigation Header -->
+            <nav class="navbar navbar-expand-lg navbar-dark auk-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="auk-logo-badge">A</span>
+                        <span>AUK Events</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50" href="events.html">Events</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="text-white me-2" style="cursor: pointer;"><i class="bi bi-moon-fill"></i></span>
+                            <a href="login.html" class="btn btn-auk-outline btn-sm">Sign In</a>
+                            <a href="login.html?tab=register" class="btn btn-auk-gold btn-sm">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Authentication Card Container -->
+            <main class="container my-5">
+                <div class="card login-card">
+                    <!-- Tab Toggles -->
+                    <ul class="nav nav-fill login-tabs" id="authTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active w-100" id="signin-tab" data-bs-toggle="tab" data-bs-target="#signin" type="button" role="tab" aria-controls="signin" aria-selected="true">Sign In</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">New Student Registration</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="card-body p-4">
+                        <div class="tab-content" id="authTabsContent">
+                            <!-- Sign In Tab Content -->
+                            <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
+                                <form action="my-bookings.html">
+                                    <div class="mb-3">
+                                        <label class="form-label fw-semibold text-muted">Full Name / University ID Number</label>
+                                        <input type="text" class="form-control" placeholder="Full Name / University ID Number" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-semibold text-muted">Institutional Email (@auk.edu.kw)</label>
+                                        <input type="email" class="form-control" placeholder="Institutional Email (@auk.edu.kw)" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-semibold text-muted">Password</label>
+                                        <input type="password" class="form-control" placeholder="Password" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label fw-semibold text-muted">Role</label>
+                                        <select class="form-select">
+                                            <option>Select Student</option>
+                                            <option>Select Faculty / Staff</option>
+                                            <option>Select Coordinator</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-auk-gold w-100 py-2 fw-bold mb-3">Sign In with University ID</button>
+                                </form>
+
+                                <!-- Hidden by default with Bootstrap 'd-none' -->
+                                <div class="mt-4 border-top pt-3 d-none" id="validationAlertsBox">
+                                    <h6 class="fw-bold text-danger">Validation Alerts</h6>
+                                    <div class="alert alert-danger p-2 small mb-0" role="alert">
+                                        <i class="bi bi-exclamation-triangle-fill me-2"></i>Invalid institutional domain. Please use @auk.edu.kw
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sign Up Tab Content -->
+                            <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                                <form action="my-bookings.html">
+                                    <div class="mb-3">
+                                        <label class="form-label fw-semibold text-muted">Full Name</label>
+                                        <input type="text" class="form-control" placeholder="Full Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-semibold text-muted">University ID Number</label>
+                                        <input type="text" class="form-control" placeholder="e.g. 22221110318" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-semibold text-muted">Institutional Email</label>
+                                        <input type="email" class="form-control" placeholder="yourname@auk.edu.kw" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-semibold text-muted">Create Password</label>
+                                        <input type="password" class="form-control" placeholder="At least 6 characters" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-auk-maroon w-100 py-2 fw-bold text-white mb-2">Complete Registration</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="auk-footer text-center">
+            <div class="container">
+                <p class="mb-1">AMERICAN UNIVERSITY OF KUWAIT</p>
+                <div class="d-flex justify-content-center gap-3 mb-2">
+                    <a href="index.html">Home</a>
+                    <a href="events.html">Events</a>
+                </div>
+                <small class="text-muted">&copy; 2026 AUK EventFlow. All rights reserved.</small>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
