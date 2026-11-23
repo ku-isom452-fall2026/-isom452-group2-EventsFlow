@@ -61,20 +61,20 @@
                             <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
                                 <form action="my-bookings.html">
                                     <div class="mb-3">
-                                        <label class="form-label fw-semibold text-muted">Full Name / University ID Number</label>
-                                        <input type="text" class="form-control" placeholder="Full Name / University ID Number" required>
+                                        <label for="signinIdentity" class="form-label fw-semibold text-muted">Full Name / University ID Number</label>
+                                        <input id="signinIdentity" type="text" class="form-control" placeholder="Full Name / University ID Number" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label fw-semibold text-muted">Institutional Email (@auk.edu.kw)</label>
-                                        <input type="email" class="form-control" placeholder="Institutional Email (@auk.edu.kw)" required>
+                                        <label for="signinEmail" class="form-label fw-semibold text-muted">Institutional Email (@auk.edu.kw)</label>
+                                        <input id="signinEmail" type="email" class="form-control" placeholder="Institutional Email (@auk.edu.kw)" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label fw-semibold text-muted">Password</label>
-                                        <input type="password" class="form-control" placeholder="Password" required>
+                                        <label for="signinPassword" class="form-label fw-semibold text-muted">Password</label>
+                                        <input id="signinPassword" type="password" class="form-control" placeholder="Password" required>
                                     </div>
                                     <div class="mb-4">
-                                        <label class="form-label fw-semibold text-muted">Role</label>
-                                        <select class="form-select">
+                                        <label for="signinRole" class="form-label fw-semibold text-muted">Role</label>
+                                        <select id="signinRole" class="form-select">
                                             <option>Select Student</option>
                                             <option>Select Faculty / Staff</option>
                                             <option>Select Coordinator</option>
@@ -96,20 +96,20 @@
                             <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
                                 <form action="my-bookings.html">
                                     <div class="mb-3">
-                                        <label class="form-label fw-semibold text-muted">Full Name</label>
-                                        <input type="text" class="form-control" placeholder="Full Name" required>
+                                        <label for="signupName" class="form-label fw-semibold text-muted">Full Name</label>
+                                        <input id="signupName" type="text" class="form-control" placeholder="Full Name" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label fw-semibold text-muted">University ID Number</label>
-                                        <input type="text" class="form-control" placeholder="e.g. 22221110318" required>
+                                        <label for="signupId" class="form-label fw-semibold text-muted">University ID Number</label>
+                                        <input id="signupId" type="text" class="form-control" placeholder="e.g. 22221110318" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label fw-semibold text-muted">Institutional Email</label>
-                                        <input type="email" class="form-control" placeholder="yourname@auk.edu.kw" required>
+                                        <label for="signupEmail" class="form-label fw-semibold text-muted">Institutional Email</label>
+                                        <input id="signupEmail" type="email" class="form-control" placeholder="yourname@auk.edu.kw" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label fw-semibold text-muted">Create Password</label>
-                                        <input type="password" class="form-control" placeholder="At least 6 characters" required>
+                                        <label for="signupPassword" class="form-label fw-semibold text-muted">Create Password</label>
+                                        <input id="signupPassword" type="password" class="form-control" placeholder="At least 6 characters" required>
                                     </div>
                                     <button type="submit" class="btn btn-auk-maroon w-100 py-2 fw-bold text-white mb-2">Complete Registration</button>
                                 </form>
