@@ -1,5 +1,6 @@
 /* AUK EventFlow Custom Theme Styles */
 :root {
+    /* A small set of shared colors keeps every page visually consistent. */
     --auk-maroon: #7A1727;
     --auk-maroon-hover: #5F111D;
     --auk-gold: #D4A34F;
@@ -15,6 +16,7 @@ html, body {
     margin: 0;
 }
 
+/* The flex layout keeps the footer at the bottom on short pages. */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--auk-bg-light);
@@ -42,6 +44,7 @@ body {
     margin-top: auto;
 }
 
+/* Shared navigation styles used by every page. */
 .auk-navbar {
     background-color: var(--auk-maroon);
     padding: 0.8rem 1.5rem;
@@ -67,6 +70,7 @@ body {
     border-radius: 6px;
 }
 
+/* Shared button styles provide a consistent visual language for actions. */
 .auk-navbar .nav-link {
     color: rgba(255, 255, 255, 0.9) !important;
     font-weight: 500;
@@ -161,6 +165,7 @@ body {
     text-decoration: underline;
 }
 
+/* The hero is the main call-to-action area on the home page. */
 .auk-hero-card {
     background: linear-gradient(135deg, var(--auk-maroon) 0%, #A31E32 100%);
     border-radius: 16px;
@@ -176,6 +181,7 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Cards are used for event summaries, categories, and bookings. */
 .auk-card {
     background-color: white;
     border: none;
@@ -254,4 +260,41 @@ body {
     border-radius: 16px;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Small utilities used by the HTML pages. */
+.tracking-wider {
+    letter-spacing: 0.08em;
+}
+
+.max-width-600 {
+    max-width: 600px;
+}
+
+.shadow-xs {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Prevent long event names from breaking compact cards on smaller screens. */
+.card-title {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 576px) {
+    .auk-navbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .auk-hero-card {
+        padding: 2rem 1.25rem;
+    }
+
+    .auk-hero-card h1 {
+        font-size: 2.1rem;
+    }
+
+    .detail-main-card,
+    .detail-sidebar-card {
+        padding: 1.5rem;
+    }
 }
